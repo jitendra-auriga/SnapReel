@@ -1,0 +1,36 @@
+# Nose 3D Model
+# Basic triangulated nose shape
+mtllib nose1.mtl
+
+# Vertices
+v 0.000000 0.000000 0.000000  # Base center
+v -0.500000 0.000000 0.300000  # Base left
+v 0.500000 0.000000 0.300000  # Base right
+v 0.000000 0.500000 0.800000  # Tip
+v -0.300000 0.250000 0.200000  # Left nostril
+v 0.300000 0.250000 0.200000  # Right nostril
+v 0.000000 0.300000 0.400000  # Bridge middle
+v -0.200000 0.150000 0.300000  # Left bridge
+v 0.200000 0.150000 0.300000  # Right bridge
+
+# Texture coordinates
+vt 0.500000 0.000000
+vt 0.000000 0.000000
+vt 1.000000 0.000000
+vt 0.500000 1.000000
+vt 0.250000 0.500000
+vt 0.750000 0.500000
+
+# Normals
+vn 0.000000 -1.000000 0.000000
+vn 0.000000 0.447214 0.894427
+vn -0.894427 0.447214 0.000000
+vn 0.894427 0.447214 0.000000
+
+# Faces
+f 1/1/1 2/2/1 3/3/1  # Base triangle
+f 2/2/2 4/4/2 3/3/2  # Front surface
+f 5/5/3 4/4/3 6/6/3  # Left side
+f 6/6/4 4/4/4 7/1/4  # Right side
+f 8/5/2 9/6/2 4/4/2  # Bridge
+f 1/1/1 5/5/1 6/6/1  # Nostrils
